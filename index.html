@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #greycol {
+            color: gray;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+
+        .monday:nth-child(even) {
+            color: red;
+        }
+
+        .tuesday:nth-child(2n + 1) {
+            background-color: orange;
+        }
+        .link:visited{
+            color: blueviolet;
+        }
+        .button:focus{
+            color: crimson;
+        }
+        .friday:nth-last-child(-n + 3) {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-box">
+        <h3 style="color: pink;">Пофарбуйте мене в рожевий колір (color:pink).</h3>
+
+        <p>Даний елемент має залишитись неоформленим.</p>
+        <p id='greycol'>Пофарбуйте мене в сірий колір (color:grey).</p>
+
+        <div>
+            Даний елемент має залишитись неоформленим.
+        </div>
+        <div>
+            <p style="color: red;">Пофарбуйте мене в червоний колір (color:red).</p>
+        </div>
+        <h3>Даний елемент має залишитись неоформленим.</h3>
+        <p style="color: green;">Пофарбуйте мене в зелений колір (color:green).</p>
+        <p class='yellow'>Пофарбуйте мене в жовтий колір (color:yellow).</p>
+    </div>
+
+    <div>
+        <ul>
+            <li class="monday">Фізкультура</li>
+            <li class="monday">Алгебра</li>
+            <li class="monday">Фізика</li>
+            <li class="monday">Українська мова</li>
+            <li class="monday">Трудове</li>
+        </ul>
+        <ul>
+            <li class="tuesday">Геометрія</li>
+            <li class="tuesday">Українська мова</li>
+            <li class="tuesday">Фізкультура</li>
+            <li class="tuesday">Фізика</li>
+            <li class="tuesday">Зарубіжна література</li>
+        </ul>
+        <ul>
+            <li class="wednesday"><a href="#" class="link"> Українська література</a></li>
+            <li class="wednesday">Фізика</li>
+            <li class="wednesday">Геометрія</li>
+            <li class="wednesday">Правознавство</li>
+            <li class="wednesday">Астрономія</li>
+        </ul>
+        <ul>
+            <li class="thursday"><button class="button"> Українська мова</button></li>
+            <li class="thursday">Фізика</li>
+            <li class="thursday">Алгебра</li>
+            <li class="thursday">Зарубіжна література</li>
+            <li class="thursday">Трудове</li>
+        </ul>
+        <ul>
+            <li class="friday">Правознавство</li>
+            <li class="friday">Українська література</li>
+            <li class="friday">Біологія</li>
+            <li class="friday">Алгебра</li>
+            <li class="friday">Фізика</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
